@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="chart.css">
+</head>
+
+<body>
+    <br>
+    <div class="main-wrapper">
+        <h1>TRADING CHART</h1>
+        <br>
+
+
+        <div class="search-container">
+            <input type="text" id="searchBox" placeholder="Chobir nam likhun..." onkeyup="searchImage()">
+        </div>
+
+
+
+
+        <div class="scroll-area">
+            <div class="gallery" id="imageContainer">
+                <div class="image-card" data-name="nature">
+                    <img src="https://picsum.photos/400/400?random=1" onclick="viewImage(this.src)">
+                    <p>Nature</p>
+                    <a href="https://picsum.photos/400/400?random=1" download="nature.jpg"
+                        class="download-btn">Download</a>
+                </div>
+
+
+                <div class="image-card" data-name="ocean">
+                    <img src="https://picsum.photos/400/400?random=2" onclick="viewImage(this.src)">
+                    <p>Ocean</p>
+                    <a href="https://picsum.photos/400/400?random=2" download="ocean.jpg"
+                        class="download-btn">Download</a>
+                </div>
+
+
+
+                <div class="image-card" data-name="sky">
+                    <img src="https://picsum.photos/400/400?random=3" onclick="viewImage(this.src)">
+                    <p>Sky</p>
+                    <a href="https://picsum.photos/400/400?random=3" download="sky.jpg"
+                        class="download-btn">Download</a>
+                </div>
+
+
+
+                <div class="image-card" data-name="nature">
+                    <img src="https://picsum.photos/400/400?random=1" onclick="viewImage(this.src)">
+                    <p>Nature</p>
+                    <a href="https://picsum.photos/400/400?random=1" download="nature.jpg"
+                        class="download-btn">Download</a>
+                </div>
+
+
+
+                <div class="image-card" data-name="ocean">
+                    <img src="https://picsum.photos/400/400?random=2" onclick="viewImage(this.src)">
+                    <p>Ocean</p>
+                    <a href="https://picsum.photos/400/400?random=2" download="ocean.jpg"
+                        class="download-btn">Download</a>
+                </div>
+
+
+                <div class="image-card" data-name="sky">
+                    <img src="https://picsum.photos/400/400?random=3" onclick="viewImage(this.src)">
+                    <p>Sky</p>
+                    <a href="https://picsum.photos/400/400?random=3" download="sky.jpg"
+                        class="download-btn">Download</a>
+                </div>
+
+
+
+                <div class="image-card" data-name="nature">
+                    <img src="https://picsum.photos/400/400?random=1" onclick="viewImage(this.src)">
+                    <p>Nature</p>
+                    <a href="https://picsum.photos/400/400?random=1" download="nature.jpg"
+                        class="download-btn">Download</a>
+                </div>
+
+
+                <div class="image-card" data-name="ocean">
+                    <img src="https://picsum.photos/400/400?random=2" onclick="viewImage(this.src)">
+                    <p>Ocean</p>
+                    <a href="https://picsum.photos/400/400?random=2" download="ocean.jpg"
+                        class="download-btn">Download</a>
+                </div>
+
+
+                <div class="image-card" data-name="sky">
+                    <img src="https://picsum.photos/400/400?random=3" onclick="viewImage(this.src)">
+                    <p>Sky</p>
+                    <a href="https://picsum.photos/400/400?random=3" download="sky.jpg"
+                        class="download-btn">Download</a>
+                </div>
+
+
+
+                <div class="image-card" data-name="nature">
+                    <img src="https://picsum.photos/400/400?random=1" onclick="viewImage(this.src)">
+                    <p>Nature</p>
+                    <a href="https://picsum.photos/400/400?random=1" download="nature.jpg"
+                        class="download-btn">Download</a>
+                </div>
+
+
+                <div class="image-card" data-name="ocean">
+                    <img src="https://picsum.photos/400/400?random=2" onclick="viewImage(this.src)">
+                    <p>Ocean</p>
+                    <a href="https://picsum.photos/400/400?random=2" download="ocean.jpg"
+                        class="download-btn">Download</a>
+                </div>
+
+
+                <div class="image-card" data-name="sky">
+                    <img src="https://picsum.photos/400/400?random=3" onclick="viewImage(this.src)">
+                    <p>Sky</p>
+                    <a href="https://picsum.photos/400/400?random=3" download="sky.jpg"
+                        class="download-btn">Download</a>
+                </div>
+
+
+
+                <div class="image-card" data-name="nature">
+                    <img src="https://picsum.photos/400/400?random=1" onclick="viewImage(this.src)">
+                    <p>Nature</p>
+                    <a href="https://picsum.photos/400/400?random=1" download="nature.jpg"
+                        class="download-btn">Download</a>
+                </div>
+
+
+                <div class="image-card" data-name="ocean">
+                    <img src="https://picsum.photos/400/400?random=2" onclick="viewImage(this.src)">
+                    <p>Ocean</p>
+                    <a href="https://picsum.photos/400/400?random=2" download="ocean.jpg"
+                        class="download-btn">Download</a>
+                </div>
+
+
+                <div class="image-card" data-name="sky">
+                    <img src="https://picsum.photos/400/400?random=3" onclick="viewImage(this.src)">
+                    <p>Sky</p>
+                    <a href="https://picsum.photos/400/400?random=3" download="sky.jpg"
+                        class="download-btn">Download</a>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div id="imageModal" class="modal" onclick="closeModal()">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="fullImage">
+    </div>
+
+    <nav id="nav-bar" class="nav-panel hidden">
+        <a href="index.html" class="nav-item"><b>🏠<br>Home</b></a>
+        <a href="journal.html" class="nav-item"><b>👤<br>Journal</b></a>
+        <a href="chart.html" class="nav-item"><b>📊<br>Chart</b></a>
+        <a href="https://www.forexfactory.com/" class="nav-item"><b>📊<br>NEWS</b></a>
+        <a href="#" class="nav-item"><b>🎥<br>Learn</b></a>
+    </nav>
+
+
+    <script src="chart.js"></script>
+</body>
+
+</html>
